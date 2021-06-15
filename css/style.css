@@ -101,6 +101,17 @@ body {
   transform-origin: right;
 }
 
-.nav__link:hover::before, .nav__link:hover::after {
+.nav__link:hover::before,
+.nav__link:hover::after {
   transform: scale(1);
+}
+
+@media (max-width: 960px) {
+  .header__inner {
+    justify-content: space-between;
+  }
+
+  .nav {
+    display: none;
+  }
 }
